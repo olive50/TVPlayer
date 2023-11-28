@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TVPlayer</title>
+
+    <!-- TODO : Common API -->
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="$MANAGER_WIDGET/Common/API/Widget.js"
+    ></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"
+    ></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="$MANAGER_WIDGET/Common/webapi/1.0/webapis.js"
+    ></script>
+    <!-- TODO : Javascript code -->
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="app/javascript/Main.js"
+    ></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="app/javascript/Player.js"
+    ></script>
+
+    <!-- TODO : Style sheets code -->
+    <link rel="stylesheet" href="app/stylesheets/Main.css" type="text/css" />
+
+    <!-- TODO: Plugins -->
+  </head>
+
+  <body onload="Main.onLoad();" onunload="Main.onUnload();">
+    <!-- Dummy anchor as focus for key events -->
+    <a href="javascript:void(0);" id="anchor" onkeydown="Main.keyDown();"></a>
+
+    <!-- TODO: your code here -->
+
+    <h1>sandbox for avplayer</h1>
+    <br />
+    <div id="logdiv"></div>
+  </body>
+</html>
